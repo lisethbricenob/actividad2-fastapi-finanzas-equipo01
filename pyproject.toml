@@ -3,7 +3,7 @@ name = "actividad2-fastapi-finanzas-equipo01"
 version = "0.1.0"
 description = "API financiera con FastAPI, yfinance y Docker"
 authors = [
-    {name = "Diana Liseth BriceÃ±o Barrero",email = "dianabricenob@usantotomas.edu.co"}
+    {name = "Diana Liseth Briceño Barrero",email = "dianabricenob@usantotomas.edu.co"}
 ]
 readme = "README.md"
 requires-python = "^3.11"
@@ -27,4 +27,4 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-package-mode = false
+packages = [{ include = "financial_api", from = "src" }]
