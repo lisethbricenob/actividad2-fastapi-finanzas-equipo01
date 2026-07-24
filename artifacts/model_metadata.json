@@ -1,0 +1,35 @@
+{
+  "model_version": "random_forest_v1",
+  "model_type": "RandomForestClassifier",
+  "task": "trend_classification",
+  "training_date": "2026-07-21T00:52:44.596255+00:00",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "SPY"
+  ],
+  "features": [
+    "return_1d",
+    "ma_5",
+    "ma_10",
+    "ma_20",
+    "ma_ratio_5",
+    "ma_ratio_10",
+    "ma_ratio_20",
+    "volatility_5",
+    "volatility_10",
+    "return_lag_1",
+    "return_lag_2",
+    "return_lag_3"
+  ],
+  "target": "target_up",
+  "prediction_horizon": "next_day",
+  "primary_metric": "roc_auc",
+  "metrics": {
+    "accuracy": 0.5263,
+    "f1": 0.6542,
+    "roc_auc": 0.5149
+  },
+  "n_train": 2964,
+  "n_test": 741
+}
