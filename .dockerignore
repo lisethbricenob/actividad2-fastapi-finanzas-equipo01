@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Entornos virtuales
+.venv
+venv
+env
+
+# Python
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Pruebas y cobertura
+.pytest_cache
+.coverage
+htmlcov
+.mypy_cache
+.ruff_cache
+
+# Editores
+.vscode
+.idea
+
+# Variables y archivos locales
+.env
+.env.*
+*.log
+
+# Archivos generados
+dist
+build
+*.egg-info
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
